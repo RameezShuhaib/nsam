@@ -1,3 +1,23 @@
-<div class="jumbotron text-center">
-    <h1>{{ msg }}</h1>
+<div class="container col-md-offset-2 col-md-7">
+    <div class="form-group">
+        <label for="name">Staff Name</label>
+        <input type="text" ng-model="name" class="form-control" id="name" name="name" placeholder="Enter Name">
+    </div>
+    <div class="form-group">
+        <label for="sid">Staff Id</label>
+        <input type="text" ng-model="sid" class="form-control" id="sid" name="sid" placeholder="Enter ID">
+    </div>
+    <div class="form-group">
+        <label for="jod">Join Date</label>
+        <input type="date" ng-model="jod" class="form-control" id="jod" name="jod">
+    </div>
+    <div class="form-group">
+        <label for="mob">Mobile Number</label>
+        <input type="number" ng-model="mob" class="form-control" id="mob" name="mob" placeholder="Enter Mobile Number">
+    </div>
+    <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" ng-model="email" class="form-control" id="email" name="email" placeholder="Enter Email">
+    </div>
+    <button ng-click="addStaff()" class="btn btn-primary form-control" >Submit</button>
 </div>
