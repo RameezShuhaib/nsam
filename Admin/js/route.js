@@ -7,6 +7,21 @@ app.config(function($routeProvider) {
             controller : 'homeController'
         })
         
+        .when('/courseAndSemester', {
+            templateUrl : 'view/courseAndSemester.html',
+            controller : 'courseAndSemesterController'
+        })
+
+        .when('/section', {
+            templateUrl : 'view/section.html',
+            controller : 'sectionController'
+        })
+
+        .when('/subject', {
+            templateUrl : 'view/subject.html',
+            controller : 'subjectController'
+        })
+
         .when('/staff', {
             templateUrl : 'view/staff.html',
             controller : 'staffController'

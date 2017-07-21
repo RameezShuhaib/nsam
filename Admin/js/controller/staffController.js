@@ -1,3 +1,3 @@
 angular.module('adminApp').controller('staffController', function($scope) {
-    $scope.msg = 'Staff Controller';
+    $scope.msg = 'Staff Controller working';
 });

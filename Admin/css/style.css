@@ -136,4 +136,8 @@ body{
     color: #ffbbbc;
     background-color: #c0392b;
   }
+
+  .navbar-default .navbar-brand {
+    padding-top:15px !important;
+  }
 }
