@@ -55,5 +55,35 @@ app.config(function($routeProvider) {
         .when('/editStudent', {
             templateUrl : 'view/editStudent.html',
             controller : 'editStudentController'
+        })
+        
+        .when('/addCourseAndSemester', {
+            templateUrl : 'view/addCourseAndSemester.html',
+            controller : 'addCourseAndSemesterController'
+        })
+        
+        .when('/editCourseAndSemester', {
+            templateUrl : 'view/editCourseAndSemester.html',
+            controller : 'editCourseAndSemesterController'
+        })
+        
+        .when('/addSection', {
+            templateUrl : 'view/addSection.html',
+            controller : 'addSectionController'
+        })
+        
+        .when('/editSection', {
+            templateUrl : 'view/editSection.html',
+            controller : 'editSectionController'
+        })
+        
+        .when('/addSubject', {
+            templateUrl : 'view/addSubject.html',
+            controller : 'addSubjectController'
+        })
+        
+        .when('/editSubject', {
+            templateUrl : 'view/editSubject.html',
+            controller : 'editSubjectController'
         });
 });
