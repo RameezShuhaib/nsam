@@ -85,5 +85,6 @@ app.config(function($routeProvider) {
         .when('/editSubject', {
             templateUrl : 'view/editSubject.html',
             controller : 'editSubjectController'
-        });
+        })
+    ;
 });
