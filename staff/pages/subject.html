@@ -1,0 +1,94 @@
+
+	<!-- <h1>Subject Page</h1>
+	
+	<p>{{ message }}</p> -->
+	<div class="row">
+                        <div class="col-md-3">
+                            <input type="radio" ng-model="subtype" ng-change="selectCourse()" value="0"> Theory                   
+                        </div>
+                        <div class="col-md-3">
+                            <input type="radio" ng-model="subtype" ng-change="selectCourse()" value="1"> Lab                   
+                        </div>
+                        <div class="col-md-3">
+                            <input type="radio" ng-model="subtype" ng-change="selectCourse()" value="2"> Elective                    
+                        </div>
+                        <div class="col-md-3">&nbsp;<br><br></div>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table">
+        <thead>
+          <tr>
+            <th><label>Select Course</label></th>
+            <th><label>Select Semester</label></th>
+            <th><label>Select Section</label></th>
+            <th><label>Select Subject</label></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <select ng-model="cour" ng-change="selectSemester()" name="course">
+                <option selected>Select Course</option>
+                <option ng-repeat="a in course">{{a[0]}}</option>
+              </select>
+            </td>
+            <td>
+              <select ng-model="sem" ng-change="selectSectionSubject()" name="semester">
+                <option selected>Select Semester</option>
+                <option ng-repeat="b in semester">{{b[0][1]}}</option>
+              </select>
+            </td>
+            <td>
+              <select ng-model="sec" name="section" ng-change="selectSectionID()">
+                <option selected>Select Section</option>
+                <option ng-repeat="c in section">{{c[0]}}</option> 
+              </select>
+            </td>
+            <td>
+              <select ng-model="sub" name="subject" ng-change="selectSubjectID()">
+                <option selected>Select Subject</option>
+                <option ng-repeat="d in subject">{{d[0]}}</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><button type="button" class="btn" ng-click="insertData()">SAVE</button></td>
+          </tr>
+        
+        </tbody>
+      
+      </table>
+    
+    
+      <div>
+           <table class="table">
+        <thead>
+          <tr>
+            <th>Subject Name</th>
+            <th>Subject Code</th>
+            <th>Staff Name</th>
+            <th>Semester</th>
+            <th>Course</th>
+            <th>Section</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="x in detail">
+            <td>{{x[0]}}</td>
+            <td>{{x[1]}}</td>
+            <td>{{x[2]}}</td>
+            <td>{{x[3][1]}}</td>
+            <td>{{x[4]}}</td>
+            <td>{{x[5]}}</td>
+            <td><i class="fa fa-trash" aria-hidden="true" ng-click="deleteData(x[1],x[5],x[3])"></i></td>
+            
+          </tr>
+        </tbody>
+      </table>
+         </div>  
+                          
+
+
+    
+      
+  </div>

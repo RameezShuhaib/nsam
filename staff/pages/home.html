@@ -1,0 +1,31 @@
+<!--<div class="jumbotron text-center">
+	<h1>Home Page</h1>
+	
+	<p>{{ message }}</p>
+</div>-->
+
+<div class="row">
+	<p class="lead">test staffid {{ message }} </p>
+	<!--<span>{{ init() }}</span>-->
+	
+	<div ng-repeat="x in staffDetails">
+		<div class="col-md-9 col-sm-12">
+			<h1>Welcome {{ x.name }}</h1>
+			<dl>
+				<dt>Staff Id</dt>
+				<dd>- {{ x.sid }}</dd>
+				<dt>Staff Email ID</dt>
+				<dd>- {{ x.email }}</dd>
+				<dt>Staff Contact Number</dt>
+				<dd>- {{ x.phone }}</dd>
+			</dl>
+		</div>
+		<div class="col-md-3">
+			<img src="img/avator.png" alt="Profile Page Loading please wait" class="img-responsive img-circle">
+			<h4 class="text-center lead">{{ x.name }}</h4>
+		</div>	
+		<div>
+			<a href="#staffChangePassword">Change Password</a>
+		</div>
+	</div>
+</div>
