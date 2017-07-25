@@ -21,7 +21,7 @@
            }  
            else  
            {  
-                echo "Error";  
+                echo "The subject is already assigned";  
            }  
        
       }  

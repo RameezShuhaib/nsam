@@ -22,7 +22,7 @@ angular.module('myApp').controller('viewController', function($scope,$http,Login
 
         $scope.attendanceView = function(){
               $scope.date = document.getElementById('x').value;
-              alert($scope.date);
+              // alert($scope.date);
            
            $http({  
                      method:'POST',
